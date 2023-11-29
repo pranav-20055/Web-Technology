@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Management System</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <h1>Insurance Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="#policies">Policies</a></li>
+        <li><a href="#claims">Claims</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="policies">
+      <h2>Insurance Policies</h2>
+      <div class="policy">
+        <h3>Policy 1</h3>
+        <p>Description of Policy 1.</p>
+        <button>View Details</button>
+      </div>
+    </section>
+    
+    <section id="claims">
+      <h2>File a Claim</h2>
+      <form action="claim_handler.php" method="POST">
+        <label for="policy">Select Policy:</label>
+        <select id="policy" name="policy">
+          <option value="policy1">Policy 1</option>
+          <option value="policy2">Policy 2</option>
+          <option value="policy3">Policy 3</option>
+          <!-- Add more policy options -->
+        </select>
+        
+        <label for="claim-details">Claim Details:</label>
+        <textarea id="claim-details" name="claim-details" rows="4" cols="50"></textarea>
+        
+        <input type="submit" value="Submit Claim">
+      </form>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch for inquiries or support.</p>
+      <address>
+        Address: 123 Insurance Street, City, Country<br>
+        Phone: +1234567890<br>
+        Email: info@insuranceservice.com
+      </address>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Insurance Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

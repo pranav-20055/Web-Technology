@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Job Application Website</title>
+
+<body>
+    <header>
+        <h1>Job Application Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#post-job">Post a Job</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Job Application Platform</h2>
+            <p>Find the right job for you or post job opportunities.</p>
+        </section>
+        <section id="jobs">
+            <h2>Available Jobs</h2>
+            <div class="job">
+                <h3>Job Title 1</h3>
+                <p>Company: ABC Corp</p>
+                <p>Location: City, Country</p>
+                <p>Description: Job details and requirements</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="job">
+                <h3>Job Title 2</h3>
+                <p>Company: XYZ Inc</p>
+                <p>Location: City, Country</p>
+                <p>Description: Job details and requirements</p>
+                <button>Apply Now</button>
+            </div>
+        </section>
+        <section id="post-job">
+            <h2>Post a Job</h2>
+            <!-- Include a form for posting job opportunities -->
+            <form action="post_job_process.php" method="post">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" name="jobDescription" required></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@jobapplication.com<br>
+                Phone: +1234567890<br>
+                Address: 123 Job Street, City, Country
+            </address>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form action="login_process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Job Application Platform</p>
+    </footer>
+</body>
+
+</html>

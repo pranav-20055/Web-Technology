@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hospital Appointment Booking</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital Appointment Booking</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Book Appointment</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>Explore our medical services.</p>
+      <ul>
+        <li>General Checkup</li>
+        <li>Specialized Consultation</li>
+        <li>Diagnostic Tests</li>
+        <!-- Add more services -->
+      </ul>
+    </section>
+    
+    <section id="booking">
+      <h2>Book an Appointment</h2>
+      <form action="booking_handler.php" method="POST">
+        <label for="service">Select Service:</label>
+        <select id="service" name="service">
+          <option value="general_checkup">General Checkup</option>
+          <option value="specialized_consultation">Specialized Consultation</option>
+          <option value="diagnostic_tests">Diagnostic Tests</option>
+        </select>
+        
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date">
+        
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time">
+        
+        <input type="submit" value="Book Appointment">
+      </form>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for any inquiries.</p>
+      <address>
+        Address: 123 Hospital Street, City, Country<br>
+        Phone: +1234567890<br>
+        Email: info@hospital.com
+      </address>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Hospital Appointment Booking. All rights reserved.</p>
+  </footer>
+</body>
+</html>

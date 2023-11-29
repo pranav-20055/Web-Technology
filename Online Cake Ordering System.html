@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Cake Ordering System</title>
+</head>
+<body>
+    <header>
+        <h1>Online Cake Ordering System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to our Online Cake Ordering System!</h2>
+            <p>Explore our delicious cakes and customize your order.</p>
+        </section>
+
+        <section id="cakes">
+            <h2>Available Cakes</h2>
+        </section>
+
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form action="order_process.php" method="post">
+                <label for="cake">Select Cake:</label>
+                <select id="cake" name="cake" required>
+                    <option value="chocolate">Chocolate Cake</option>
+                    <!-- Add more options -->
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please contact us at:</p>
+            <address>
+                Email: example@example.com<br>
+                Phone: 123-456-7890
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Online Cake Ordering System</p>
+    </footer>
+</body>
+</html>

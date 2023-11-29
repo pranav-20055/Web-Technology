@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Garbage Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>Garbage Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pickup">Schedule Pickup</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Garbage Management System</h2>
+            <p>Efficient and eco-friendly waste disposal solutions.</p>
+        </section>
+        <section id="pickup">
+            <h2>Schedule Pickup</h2>
+            <form action="pickup_process.php" method="post">
+                <label for="address">Pickup Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="pickupDate">Preferred Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+                <button type="submit">Schedule Pickup</button>
+            </form>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Residential Waste Collection</li>
+                <li>Commercial Waste Disposal</li>
+                <li>Recycling Programs</li>
+                <li>Hazardous Waste Disposal</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@garbagemanagement.com<br>
+                Phone: +1234567890<br>
+                Address: 789 Garbage Avenue, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Garbage Management System</p>
+    </footer>
+</body>
+
+</html>

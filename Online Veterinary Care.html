@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Veterinary Care - Animal Medical Solutions</title>
+</head>
+
+<body>
+    <header>
+        <h1>Online Veterinary Care</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Online Veterinary Care</h2>
+            <p>Your trusted partner in animal medical solutions.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Check-ups</li>
+                <li>Vaccinations</li>
+                <li>Surgeries</li>
+                <li>Dental Care</li>
+                <li>Emergency Care</li>
+            </ul>
+        </section>
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form action="appointment_process.php" method="post">
+                <label for="petName">Pet's Name:</label>
+                <input type="text" id="petName" name="petName" required><br>
+                <label for="ownerName">Owner's Name:</label>
+                <input type="text" id="ownerName" name="ownerName" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="appointmentDate">Preferred Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required><br>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        <section id="articles">
+            <h2>Articles</h2>
+            <div class="article">
+                <h3>Understanding Your Pet's Dietary Needs</h3>
+                <p>Article content goes here...</p>
+            </div>
+            <div class="article">
+                <h3>Dealing with Common Pet Allergies</h3>
+                <p>Article content goes here...</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@onlinevetcare.com<br>
+                Phone: +1234567890<br>
+                Address: 789 Veterinary Avenue, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Veterinary Care - Animal Medical Solutions</p>
+    </footer>
+</body>
+
+</html>

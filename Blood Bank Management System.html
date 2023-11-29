@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blood Bank Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#donate">Donate Blood</a></li>
+                <li><a href="#inventory">Blood Inventory</a></li>
+                <li><a href="#find-donor">Find a Donor</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Blood Bank Management System</h2>
+            <p>Help save lives by donating blood or finding donors.</p>
+        </section>
+        <section id="donate">
+            <h2>Donate Blood</h2>
+            <form action="donate_process.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" name="bloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                </select>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Register as Donor</button>
+            </form>
+        </section>
+        <section id="inventory">
+            <h2>Blood Inventory</h2>
+            <p>Blood Group A+: 50 units</p>
+            <p>Blood Group B-: 30 units</p>
+        </section>
+        <section id="find-donor">
+            <h2>Find a Donor</h2>
+            <form action="find_donor_process.php" method="post">
+                <label for="bloodGroupNeeded">Blood Group Needed:</label>
+                <select id="bloodGroupNeeded" name="bloodGroupNeeded" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <!-- Include other blood groups -->
+                </select>
+                <button type="submit">Search</button>
+            </form>
+            <div class="donor-info">
+                <h3>Donor Name: John Doe</h3>
+                <p>Blood Group: A+</p>
+                <p>Contact: +1234567890</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@bloodbank.com<br>
+                Phone: +1234567890<br>
+                Address: 123 Blood Bank Street, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Blood Bank Management System</p>
+    </footer>
+</body>
+
+</html>

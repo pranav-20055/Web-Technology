@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>e-Voting System</title>
+</head>
+
+<body>
+    <header>
+        <h1>e-Voting System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#candidates">View Candidates</a></li>
+                <li><a href="#vote">Vote Now</a></li>
+                <li><a href="#results">View Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to e-Voting System</h2>
+            <p>Participate in the democratic process online.</p>
+        </section>
+
+        <!-- View Candidates Section -->
+        <section id="candidates">
+            <h2>View Candidates</h2>
+            <ul>
+                <li>Candidate A</li>
+                <li>Candidate B</li>
+            </ul>
+        </section>
+        <section id="vote">
+            <h2>Vote Now</h2>
+            <form action="vote_process.php" method="post">
+                <label for="candidate">Select Candidate:</label>
+                <select id="candidate" name="candidate" required>
+                    <option value="candidateA">Candidate A</option>
+                    <option value="candidateB">Candidate B</option>
+                </select>
+                <button type="submit">Submit Vote</button>
+            </form>
+      </section>
+        <section id="results">
+            <h2>View Results</h2>
+            <!-- Display the voting results -->
+            <p>Results will be displayed after the voting period ends.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@evotingsystem.com<br>
+                Phone: +1234567890<br>
+                Address: 789 Voting Street, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 e-Voting System</p>
+    </footer>
+</body>
+
+</html>

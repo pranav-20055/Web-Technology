@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Complaint Registration System</title>
+
+<body>
+    <header>
+        <h1>Online Complaint Registration System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register Complaint</a></li>
+                <li><a href="#complaints">View Complaints</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Complaint Registration System</h2>
+            <p>Register and manage your complaints online.</p>
+        </section>
+        <section id="register">
+            <h2>Register a Complaint</h2>
+            <form action="complaint_process.php" method="post">
+                <label for="complaintType">Complaint Type:</label>
+                <select id="complaintType" name="complaintType" required>
+                    <option value="service">Service Issue</option>
+                    <option value="product">Product Issue</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <label for="complaintDetails">Complaint Details:</label>
+                <textarea id="complaintDetails" name="complaintDetails" required></textarea>
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </section>
+        <section id="complaints">
+            <h2>View Complaints</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Complaint Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                        <td>1</td>
+                        <td>Service Issue</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@complaintsystem.com<br>
+                Phone: +1234567890<br>
+                Address: 456 Complaints Avenue, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Complaint Registration System</p>
+    </footer>
+</body>
+
+</html>

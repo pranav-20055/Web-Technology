@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Vehicle Rental System</title>
+</head>
+
+<body>
+    <header>
+        <h1>Online Vehicle Rental</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#rent">Rent a Vehicle</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Online Vehicle Rental</h2>
+            <p>Find the perfect vehicle for your journey.</p>
+        </section>
+        <section id="vehicles">
+            <h2>Available Vehicles</h2>
+            <div class="vehicle">
+                <img src="car1.jpg" alt="Car 1">
+                <h3>Car 1</h3>
+                <p>Model: XYZ</p>
+                <p>Price per day: $XX.XX</p>
+                <button>Rent Now</button>
+            </div>
+            <div class="vehicle">
+                <img src="bike1.jpg" alt="Bike 1">
+                <h3>Bike 1</h3>
+                <p>Model: ABC</p>
+                <p>Price per day: $XX.XX</p>
+                <button>Rent Now</button>
+            </div>
+        </section>
+        <section id="rent">
+            <h2>Rent a Vehicle</h2>
+            <form action="rent_process.php" method="post">
+                <label for="vehicleType">Vehicle Type:</label>
+                <select id="vehicleType" name="vehicleType" required>
+                    <option value="car">Car</option>
+                    <option value="bike">Bike</option>
+                    <!-- Add more options for different vehicle types -->
+                </select>
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, reach out to us:</p>
+            <address>
+                Email: contact@vehicle-rental.com<br>
+                Phone: +1234567890<br>
+                Address: 456 Rental Street, City, Country
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Vehicle Rental</p>
+    </footer>
+</body>
+
+</html>
